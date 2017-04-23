@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/bcbio/bcbio_docker.svg?branch=master)](https://travis-ci.org/bcbio/bcbio_docker)
 
 Use [Travis CI](https://travis-ci.org/bcbio/bcbio_docker) and
-[Quay](https://quay.io/repository/bcbio/bcbio-base?tab=tags) to build Docker images for
+[Quay](https://quay.io/organization/bcbio) to build Docker images for
 [bcbio](https://github.com/chapmanb/bcbio-nextgen).
 
 A work in progress to automate and split up the current monolithic bcbio/bcbio
@@ -17,9 +17,9 @@ CWL:
 - [bcbio-base](https://quay.io/repository/bcbio/bcbio-base?tab=tags) --
   A base version of bcbio containing the code and no tools. This is the building
   block for application specific containers.
-- bcbio-alignment -- bcbio with alignment programs
-- bcbio-variantcall -- bcbio with small variant callers
-- bcbio-svcall -- bcbio with structural variant callers
+- bcbio-align -- bcbio with alignment programs
+- bcbio-variant -- bcbio with small variant callers
+- bcbio-sv -- bcbio with structural variant callers
 
 The YAML files defining tools installed in the target Docker images are in
 `packages`. We autogenerate these from tool requirements in CWL specification

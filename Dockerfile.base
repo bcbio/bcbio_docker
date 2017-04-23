@@ -1,3 +1,5 @@
+# Build bcbio base image with code and framework
+
 FROM ubuntu:16.04
 MAINTAINER Brad Chapman "https://github.com/chapmanb"
 ARG git_revision=master

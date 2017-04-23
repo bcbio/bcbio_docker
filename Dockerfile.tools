@@ -1,0 +1,18 @@
+# Build bcbio CWL ready docker images with tools from base image
+
+# TODO Can't yet use $git_revision in FROM command but will be possible
+# in next Docker release so leave git_revision and move when available
+FROM quay.io/bcbio/bcbio-base:latest
+ARG git_revision=latest
+ARG tool_yaml=none
+MAINTAINER Brad Chapman "https://github.com/chapmanb"
+
+# install tools with custom YAML file
+RUN mkdir -p /tmp/bcbio-nextgen-install && cd /tmp/bcbio-nextgen-install && \
+    /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py upgrade --isolate \
+    --tooldir=/usr/local --tools --toolconf tool_yaml && \
+
+# clean filesystem
+    cd /usr/local && \ 
+    /usr/local/share/bcbio-nextgen/anaconda/bin/conda clean --yes --tarballs && \
+    rm -rf /tmp/bcbio-nextgen-install

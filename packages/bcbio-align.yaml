@@ -1,0 +1,22 @@
+bio_nextgen:
+- bedtools
+- biobambam
+- bwa
+- bwakit
+- fgbio
+- goleft
+- grabix
+- htslib
+- novoalign
+- sambamba
+- samtools
+- snap-aligner=1.0dev.97
+- umis
+channels:
+- bioconda
+- conda-forge
+- r
+minimal:
+- anaconda-client
+- awscli
+- nodejs
