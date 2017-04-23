@@ -4,13 +4,14 @@
 # in next Docker release so leave git_revision and move when available
 FROM quay.io/bcbio/bcbio-base:latest
 ARG git_revision=latest
-ARG tool_yaml=none
+ARG tool=none
 MAINTAINER Brad Chapman "https://github.com/chapmanb"
 
+ADD packages/"$tool".yaml /
 # install tools with custom YAML file
 RUN mkdir -p /tmp/bcbio-nextgen-install && cd /tmp/bcbio-nextgen-install && \
     /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py upgrade --isolate \
-    --tooldir=/usr/local --tools --toolconf "$tool_yaml" && \
+    --tooldir=/usr/local --tools --toolconf /"$tool".yaml && \
 
 # clean filesystem
     cd /usr/local && \ 
