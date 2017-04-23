@@ -20,3 +20,4 @@ minimal:
 - anaconda-client
 - awscli
 - nodejs
+- ncurses
