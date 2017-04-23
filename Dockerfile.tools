@@ -10,7 +10,7 @@ MAINTAINER Brad Chapman "https://github.com/chapmanb"
 # install tools with custom YAML file
 RUN mkdir -p /tmp/bcbio-nextgen-install && cd /tmp/bcbio-nextgen-install && \
     /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py upgrade --isolate \
-    --tooldir=/usr/local --tools --toolconf tool_yaml && \
+    --tooldir=/usr/local --tools --toolconf "$tool_yaml" && \
 
 # clean filesystem
     cd /usr/local && \ 
