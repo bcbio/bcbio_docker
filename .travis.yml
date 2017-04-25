@@ -3,8 +3,11 @@ sudo: required
 dist: trusty
 services:
   - docker
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y parallel
 script:
-- sudo -E bash build.sh
+  - sudo -E bash build.sh
 notifications:
   email: false
 env:
