@@ -24,5 +24,5 @@ docker login -u="bcbio+travis" -p="$QUAY_PASSWORD" quay.io
 # push images
 set -ex -o pipefail
 
-parallel -v -j 4 "docker push ${NS}/{}:${TAG}" ::: "bcbio-base" $TOOLS
-parallel -v -j 4 "docker push ${NS}/{}:latest" ::: "bcbio-base" $TOOLS
+travis_wait 30 parallel --line-buffer -v -j 4 "docker push ${NS}/{}:${TAG}" ::: "bcbio-base" $TOOLS
+parallel --line-buffer -v -j 4 "docker push ${NS}/{}:latest" ::: "bcbio-base" $TOOLS
