@@ -1,21 +1,16 @@
 bio_nextgen:
+- bcftools
 - bedtools
-- biobambam
-- bwa
-- bwakit
-- fgbio
+- fastqc
 - goleft
-- grabix
-- htslib
-- novoalign
+- multiqc
+- multiqc-bcbio
+- picard
 - pythonpy
+- qsignature
+- qualimap
 - sambamba
-- samblaster
 - samtools
-- sentieon
-- seqtk
-- snap-aligner=1.0dev.97
-- umis
 channels:
 - bioconda
 - conda-forge

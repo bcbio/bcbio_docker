@@ -1,0 +1,30 @@
+bio_nextgen:
+- bcftools
+- bedtools
+- freebayes=1.1.0
+- gatk
+- gatk-framework
+- gvcf-regions
+- htslib
+- perl
+- picard
+- platypus-variant
+- pythonpy
+- r=3.2.2
+- rtg-tools
+- samtools
+- snpeff=4.3i
+- vardict
+- vardict-java
+- varscan
+- vcfanno
+- vcflib
+- vt
+channels:
+- bioconda
+- conda-forge
+- r
+minimal:
+- awscli
+- nodejs
+- ncurses

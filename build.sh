@@ -2,8 +2,8 @@
 set -ex -o pipefail
 
 BCBIO_VERSION="1.0.3a"
-BCBIO_REVISION="7f4fb4c"
-TOOLS="bcbio-align"
+BCBIO_REVISION="3be5db2"
+TOOLS="bcbio-align bcbio-vc bcbio-qc"
 NS="quay.io/bcbio"
 TAG="${BCBIO_VERSION}-${BCBIO_REVISION}"
 
