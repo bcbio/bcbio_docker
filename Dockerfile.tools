@@ -15,5 +15,5 @@ RUN mkdir -p /tmp/bcbio-nextgen-install && cd /tmp/bcbio-nextgen-install && \
 
 # clean filesystem
     cd /usr/local && \ 
-    /usr/local/share/bcbio-nextgen/anaconda/bin/conda clean --yes --tarballs && \
+    /usr/local/share/bcbio-nextgen/anaconda/bin/conda clean --yes --tarballs --packages --source-cache && \
     rm -rf /tmp/bcbio-nextgen-install

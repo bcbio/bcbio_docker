@@ -17,5 +17,4 @@ channels:
 - r
 minimal:
 - awscli
-- nodejs
 - ncurses
