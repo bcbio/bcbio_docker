@@ -15,12 +15,9 @@ CWL:
 - [bcbio-base](https://quay.io/repository/bcbio/bcbio-base?tab=tags) --
   A base version of bcbio containing the code and no tools. This is the building
   block for application specific containers.
-- [bcbio-align](https://quay.io/repository/bcbio/bcbio-base?tab=tags) --
-  bcbio with alignment programs
 - [bcbio-vc](https://quay.io/repository/bcbio/bcbio-base?tab=tags) --
-  bcbio with small variant callers
-- [bcbio-qc](https://quay.io/repository/bcbio/bcbio-base?tab=tags) --
-  bcbio with quality control tools
+  bcbio with tools for variant calling: alignment; quality control;
+  SNP, indel and structural variant callers
 
 The YAML files defining tools installed in the target Docker images are in
 `packages`. We autogenerate these from tool requirements in CWL specification
