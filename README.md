@@ -15,7 +15,7 @@ CWL:
 - [bcbio-base](https://quay.io/repository/bcbio/bcbio-base?tab=tags) --
   A base version of bcbio containing the code and no tools. This is the building
   block for application specific containers.
-- [bcbio-vc](https://quay.io/repository/bcbio/bcbio-base?tab=tags) --
+- [bcbio-vc](https://quay.io/repository/bcbio/bcbio-vc?tab=tags) --
   bcbio with tools for variant calling: alignment; quality control;
   SNP, indel and structural variant callers
 

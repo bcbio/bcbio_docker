@@ -40,9 +40,11 @@ bio_nextgen:
 - vcflib
 - vt
 channels:
-- bioconda
 - conda-forge
-- r
+- bioconda
 minimal:
 - awscli
+- bzip2
 - ncurses
+- nomkl
+- readline
