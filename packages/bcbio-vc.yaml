@@ -35,6 +35,7 @@ bio_nextgen:
 - umis
 - vardict
 - vardict-java
+- variantbam
 - varscan
 - vcfanno
 - vcflib
