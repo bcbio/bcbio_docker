@@ -6,7 +6,7 @@ bio_nextgen:
 - bwakit
 - fastqc
 - fgbio
-- freebayes=1.1.0
+- freebayes=1.1.0.46
 - gatk
 - gatk-framework
 - gatk4
@@ -14,12 +14,14 @@ bio_nextgen:
 - grabix
 - gvcf-regions
 - htslib
+- mosdepth
 - multiqc
 - multiqc-bcbio
 - novoalign
 - perl
 - picard
 - platypus-variant
+- preseq
 - pythonpy
 - qsignature
 - qualimap
