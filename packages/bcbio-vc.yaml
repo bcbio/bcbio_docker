@@ -4,6 +4,9 @@ bio_nextgen:
 - biobambam
 - bwa
 - bwakit
+- cnvkit
+- delly
+- extract-sv-reads
 - fastqc
 - fgbio
 - freebayes=1.1.0.46
@@ -14,6 +17,8 @@ bio_nextgen:
 - grabix
 - gvcf-regions
 - htslib
+- lumpy-sv
+- manta
 - mosdepth
 - multiqc
 - multiqc-bcbio
@@ -31,9 +36,12 @@ bio_nextgen:
 - samblaster
 - samtools
 - sentieon
+- seq2c
 - seqtk
 - snap-aligner=1.0dev.97
 - snpeff=4.3i
+- svtools
+- svtyper
 - umis
 - vardict
 - vardict-java
@@ -51,3 +59,4 @@ minimal:
 - ncurses
 - nomkl
 - readline
+- ucsc-fatotwobit

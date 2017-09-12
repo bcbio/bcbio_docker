@@ -26,7 +26,7 @@ def main(cwl_dirs, out_dir):
         out_file = os.path.join(out_dir, "%s.yaml" % docker_image.split("/")[-1])
 
         cbl_yml = {'channels': ['conda-forge', 'bioconda'],
-                   'minimal': ["awscli", "bzip2", "ncurses", "nomkl", "readline"],
+                   'minimal': ["awscli", "bzip2", "ncurses", "nomkl", "readline", "ucsc-fatotwobit"],
                    'bio_nextgen': sorted(list(packages))}
         with open(out_file, "w") as out_handle:
             yaml.safe_dump(cbl_yml, out_handle, default_flow_style=False, allow_unicode=False)
