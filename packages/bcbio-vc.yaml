@@ -38,6 +38,7 @@ bio_nextgen:
 - sentieon
 - seq2c
 - seqtk
+- simple_sv_annotation
 - snap-aligner=1.0dev.97
 - snpeff=4.3i
 - svtools
@@ -47,6 +48,7 @@ bio_nextgen:
 - vardict-java
 - variantbam
 - varscan
+- vawk
 - vcfanno
 - vcflib
 - vt
