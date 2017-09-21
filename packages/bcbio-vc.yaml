@@ -41,6 +41,7 @@ bio_nextgen:
 - simple_sv_annotation
 - snap-aligner=1.0dev.97
 - snpeff=4.3i
+- strelka2
 - svtools
 - svtyper
 - umis
