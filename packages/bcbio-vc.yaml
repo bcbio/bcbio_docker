@@ -16,6 +16,7 @@ bio_nextgen:
 - goleft
 - grabix
 - gvcf-regions
+- gvcftools
 - htslib
 - lumpy-sv
 - manta
