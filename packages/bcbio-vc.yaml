@@ -32,6 +32,7 @@ bio_nextgen:
 - qsignature
 - qualimap
 - r=3.3.2
+- r=3.4.1
 - rtg-tools
 - sambamba
 - samblaster
