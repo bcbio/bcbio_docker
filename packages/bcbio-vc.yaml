@@ -20,6 +20,7 @@ bio_nextgen:
 - htslib
 - lumpy-sv
 - manta
+- minimap2
 - mosdepth
 - multiqc
 - multiqc-bcbio
