@@ -1,0 +1,29 @@
+bio_nextgen:
+- atropos;env=python3
+- bedtools
+- fastqc
+- goleft
+- hisat2
+- kallisto
+- mosdepth
+- picard
+- pythonpy
+- qsignature
+- qualimap
+- sailfish
+- salmon
+- sambamba
+- samtools
+- seqtk
+- star
+- tophat
+channels:
+- conda-forge
+- bioconda
+minimal:
+- awscli
+- bzip2
+- ncurses
+- nomkl
+- readline
+- ucsc-fatotwobit

@@ -25,6 +25,7 @@ bio_nextgen:
 - multiqc
 - multiqc-bcbio
 - novoalign
+- peddy
 - perl
 - picard
 - platypus-variant

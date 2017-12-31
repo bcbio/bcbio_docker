@@ -18,6 +18,9 @@ CWL:
 - [bcbio-vc](https://quay.io/repository/bcbio/bcbio-vc?tab=tags) --
   bcbio with tools for variant calling: alignment; quality control;
   SNP, indel and structural variant callers
+- [bcbio-rnaseq](https://quay.io/repository/bcbio/bcbio-rnaseq?tab=tags) --
+  bcbio with tools for RNA-seq analysis: trimming, alignment quantitation and
+  quality control.
 
 The YAML files defining tools installed in the target Docker images are in
 `packages`. We autogenerate these from tool requirements in CWL specification
