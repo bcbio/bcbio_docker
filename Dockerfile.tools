@@ -9,10 +9,10 @@ MAINTAINER Brad Chapman "https://github.com/chapmanb"
 
 ADD packages/"$tool".yaml /
 # install tools with custom YAML file
+# and clean filesystem
 RUN mkdir -p /tmp/bcbio-nextgen-install && cd /tmp/bcbio-nextgen-install && \
     /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py upgrade --isolate \
     --tooldir=/usr/local --tools --toolconf /"$tool".yaml && \
-# clean filesystem
     cd /usr/local && \ 
     /usr/local/share/bcbio-nextgen/anaconda/bin/conda clean --yes --tarballs --source-cache && \
     rm -rf /usr/local/share/bcbio-nextgen/anaconda/pkgs/scipy-0.19.1-np113py27_nomkl_0 && \

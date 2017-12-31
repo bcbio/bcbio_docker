@@ -14,6 +14,7 @@ docker build --no-cache --build-arg "git_revision=${BCBIO_REVISION}" -t "${NS}/b
 for TOOL in ${TOOLS}
 do
     docker build --no-cache --build-arg "git_revision=${BCBIO_REVISION}" --build-arg "tool=${TOOL}" -t "${NS}/${TOOL}:${TAG}" -t "${NS}/${TOOL}:latest" -f Dockerfile.tools .
+    df -h
 done
 
 # log in to quay.io
