@@ -1,5 +1,4 @@
 bio_nextgen:
-- atropos;env=python3
 - bedtools
 - fastqc
 - goleft
