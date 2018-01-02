@@ -2,20 +2,26 @@ bio_nextgen:
 - atropos;env=python3
 - bedtools
 - fastqc
+- gffread
 - goleft
 - hisat2
 - kallisto
 - mosdepth
+- multiqc
+- multiqc-bcbio
 - picard
 - pythonpy
 - qsignature
 - qualimap
+- r-wasabi
+- r=3.4.1
 - sailfish
 - salmon
 - sambamba
 - samtools
 - seqtk
 - star
+- subread
 - tophat
 channels:
 - conda-forge
