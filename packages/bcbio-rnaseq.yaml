@@ -5,6 +5,7 @@ bio_nextgen:
 - gffread
 - goleft
 - hisat2
+- hts-nim-tools
 - kallisto
 - mosdepth
 - multiqc
