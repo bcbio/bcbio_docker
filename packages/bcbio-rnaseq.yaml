@@ -11,6 +11,7 @@ bio_nextgen:
 - multiqc
 - multiqc-bcbio
 - picard
+- pysam>=0.13.0
 - pythonpy
 - qsignature
 - qualimap
