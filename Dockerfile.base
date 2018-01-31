@@ -51,4 +51,7 @@ RUN apt-get update && \
     chmod a+rwx /usr/local/share/bcbio-nextgen/config/*.yaml && \
 # Ensure permissions are set for update in place by arbitrary users
     find /usr/local -perm /u+x -execdir chmod a+x {} \; && \
-    find /usr/local -perm /u+w -execdir chmod a+w {} \;
+    find /usr/local -perm /u+w -execdir chmod a+w {} \; && \
+# Ensure permissions for updating for users not present in /etc/passwd
+# https://blog.openshift.com/jupyter-on-openshift-part-6-running-as-an-assigned-user-id/
+    chmod a+w /etc/passwd

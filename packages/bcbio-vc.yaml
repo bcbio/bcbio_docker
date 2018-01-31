@@ -2,6 +2,7 @@ bio_nextgen:
 - bcftools
 - bedtools
 - biobambam
+- break-point-inspector
 - bwa
 - bwakit
 - cnvkit
@@ -11,7 +12,6 @@ bio_nextgen:
 - fgbio
 - freebayes=1.1.0.46
 - gatk
-- gatk-framework
 - gatk4
 - goleft
 - grabix
