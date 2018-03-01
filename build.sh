@@ -13,6 +13,7 @@ docker build --no-cache --build-arg "git_revision=${BCBIO_REVISION}" -t "${NS}/b
 # build bcbio + task specific tools
 for TOOL in ${TOOLS}
 do
+    df -h
     docker build --no-cache --build-arg "git_revision=${BCBIO_REVISION}" --build-arg "tool=${TOOL}" -t "${NS}/${TOOL}:${TAG}" -t "${NS}/${TOOL}:latest" -f Dockerfile.tools .
     df -h
 done
