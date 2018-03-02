@@ -18,6 +18,7 @@ import cwltool.workflow
 def main(cwl_dirs, out_dir):
     packages_by_image = collections.defaultdict(set)
     for cwl_dir in cwl_dirs:
+        print("Analyzing workflow %s" % cwl_dir)
         main_file = glob.glob(os.path.join(cwl_dir, "main-*.cwl"))[0]
         main_wf = cwltool.load_tool.load_tool(main_file, cwltool.workflow.defaultMakeTool)
         packages_by_image = get_step_packages(main_wf, packages_by_image)

@@ -6,7 +6,7 @@ bio_nextgen:
 - goleft
 - hisat2
 - hts-nim-tools
-- kallisto
+- kallisto>=0.43.1
 - mosdepth
 - multiqc
 - multiqc-bcbio
