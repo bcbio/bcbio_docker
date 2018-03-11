@@ -1,4 +1,5 @@
 bio_nextgen:
+- atropos
 - bcftools
 - bedtools
 - biobambam
