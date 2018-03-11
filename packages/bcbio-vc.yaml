@@ -1,5 +1,5 @@
 bio_nextgen:
-- atropos
+- atropos;env=python3
 - bcftools
 - bedtools
 - biobambam
