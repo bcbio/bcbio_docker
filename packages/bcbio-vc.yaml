@@ -45,6 +45,7 @@ bio_nextgen:
 - seq2c
 - seqtk
 - simple_sv_annotation
+- smoove
 - snap-aligner=1.0dev.97
 - snpeff=4.3.1t
 - strelka
