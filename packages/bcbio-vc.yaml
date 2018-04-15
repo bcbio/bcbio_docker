@@ -7,6 +7,7 @@ bio_nextgen:
 - bwa
 - bwakit
 - cnvkit
+- deepvariant
 - delly
 - extract-sv-reads
 - fastqc
@@ -60,6 +61,7 @@ bio_nextgen:
 - vawk
 - vcfanno
 - vcflib
+- vqsr_cnn
 - vt
 channels:
 - conda-forge

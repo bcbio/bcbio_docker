@@ -1,8 +1,8 @@
 #!/bin/bash
 set -ex -o pipefail
 
-BCBIO_VERSION="1.0.9a"
-BCBIO_REVISION="df7ef6b"
+BCBIO_VERSION="1.1.0a"
+BCBIO_REVISION="1c0514a"
 NS="quay.io/bcbio"
 TAG="${BCBIO_VERSION}-${BCBIO_REVISION}"
 
