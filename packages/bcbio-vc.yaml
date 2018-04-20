@@ -28,6 +28,7 @@ bio_nextgen:
 - multiqc
 - multiqc-bcbio
 - novoalign
+- optitype
 - peddy
 - perl
 - picard
@@ -38,6 +39,7 @@ bio_nextgen:
 - qsignature
 - qualimap
 - r=3.4.1
+- razers3=3.5.0
 - rtg-tools
 - sambamba
 - samblaster
