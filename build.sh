@@ -2,7 +2,7 @@
 set -ex -o pipefail
 
 BCBIO_VERSION="1.1.0a"
-BCBIO_REVISION="83fe2b0"
+BCBIO_REVISION="9fe7b38"
 NS="quay.io/bcbio"
 TAG="${BCBIO_VERSION}-${BCBIO_REVISION}"
 
