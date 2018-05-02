@@ -14,8 +14,7 @@ bio_nextgen:
 - fastqc
 - fgbio
 - freebayes=1.1.0.46
-- gatk
-- gatk4
+- gatk4=4.0.3.0
 - goleft
 - grabix
 - gvcf-regions
