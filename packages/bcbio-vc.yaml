@@ -63,6 +63,7 @@ bio_nextgen:
 - vawk
 - vcfanno
 - vcflib
+- verifybamid2
 - vqsr_cnn
 - vt
 channels:
