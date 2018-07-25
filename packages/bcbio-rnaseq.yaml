@@ -1,7 +1,7 @@
 bio_nextgen:
 - atropos;env=python3
 - bedtools
-- fastqc
+- fastqc=0.11.7=4
 - gffread
 - goleft
 - hisat2
@@ -11,6 +11,7 @@ bio_nextgen:
 - multiqc
 - multiqc-bcbio
 - picard
+- pizzly
 - pysam>=0.13.0
 - pythonpy
 - qsignature
