@@ -1,7 +1,7 @@
 bio_nextgen:
 - atropos;env=python3
 - bedtools
-- fastqc=0.11.7=4
+- fastqc=0.11.7=5
 - gffread
 - goleft
 - hisat2
@@ -16,6 +16,7 @@ bio_nextgen:
 - pythonpy
 - qsignature
 - qualimap
+- r-base=3.4.1=h4fe35fd_8
 - r-wasabi
 - r=3.4.1
 - sailfish
@@ -26,6 +27,7 @@ bio_nextgen:
 - star
 - subread
 - tophat
+- xorg-libxt
 channels:
 - conda-forge
 - bioconda

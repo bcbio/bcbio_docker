@@ -11,6 +11,7 @@ bio_nextgen:
 - coincbc
 - deepvariant
 - delly
+- duphold
 - extract-sv-reads
 - fastqc=0.11.7=5
 - fgbio
@@ -25,6 +26,7 @@ bio_nextgen:
 - lumpy-sv
 - manta
 - minimap2
+- moreutils
 - mosdepth
 - multiqc
 - multiqc-bcbio
@@ -40,6 +42,7 @@ bio_nextgen:
 - pythonpy
 - qsignature
 - qualimap
+- r-base=3.4.1=h4fe35fd_8
 - r=3.4.1
 - razers3=3.5.0
 - rtg-tools
@@ -68,6 +71,7 @@ bio_nextgen:
 - verifybamid2
 - vqsr_cnn
 - vt
+- xorg-libxt
 channels:
 - conda-forge
 - bioconda
