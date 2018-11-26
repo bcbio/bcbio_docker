@@ -4,7 +4,7 @@ set -ex -o pipefail
 TAG="${BCBIO_VERSION}-${BCBIO_REVISION}"
 
 df -h
-docker build --no-cache --build-arg "git_revision=${BCBIO_REVISION}" --build-arg "tool=${TOOL}" -t "${NS}/${TOOL}:${TAG}" -t "${NS}/${TOOL}:latest" -f Dockerfile.tools .
+docker build --no-cache --build-arg "git_revision=${TAG}" --build-arg "tool=${TOOL}" -t "${NS}/${TOOL}:${TAG}" -t "${NS}/${TOOL}:latest" -f Dockerfile.tools .
 df -h
 
 # log in to quay.io
