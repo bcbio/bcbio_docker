@@ -1,11 +1,9 @@
 # Build bcbio CWL ready docker images with tools from base image
 
-# TODO Can't yet use $git_revision in FROM command but will be possible
-# in next Docker release so leave git_revision and move when available
-FROM quay.io/bcbio/bcbio-base:latest
 ARG git_revision=latest
-ARG tool=none
+FROM quay.io/bcbio/bcbio-base:"$git_revision"
 MAINTAINER Brad Chapman "https://github.com/chapmanb"
+ARG tool=none
 
 ADD packages/"$tool".yaml /
 # install tools with custom YAML file

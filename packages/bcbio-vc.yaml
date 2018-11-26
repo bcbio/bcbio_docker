@@ -20,7 +20,7 @@ bio_nextgen:
 - goleft
 - grabix
 - gvcf-regions
-- gvcftools
+- gvcfgenotyper
 - hts-nim-tools
 - htslib
 - lumpy-sv
