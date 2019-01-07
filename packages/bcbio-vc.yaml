@@ -1,5 +1,6 @@
 bio_nextgen:
 - atropos;env=python3
+- bcbio-prioritize
 - bcbio-variation-recall
 - bcftools
 - bedtools
