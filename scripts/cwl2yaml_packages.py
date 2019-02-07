@@ -14,13 +14,16 @@ import yaml
 
 import cwltool.load_tool
 import cwltool.workflow
+import cwltool.context
 
 def main(cwl_dirs, out_dir):
     packages_by_image = collections.defaultdict(set)
     for cwl_dir in cwl_dirs:
         print("Analyzing workflow %s" % cwl_dir)
         main_file = glob.glob(os.path.join(cwl_dir, "main-*.cwl"))[0]
-        main_wf = cwltool.load_tool.load_tool(main_file, cwltool.workflow.defaultMakeTool)
+        lc = cwltool.context.LoadingContext()
+        lc.loader = cwltool.load_tool.default_loader
+        main_wf = cwltool.load_tool.load_tool(main_file, lc)
         packages_by_image = get_step_packages(main_wf, packages_by_image)
 
     for docker_image, packages in packages_by_image.items():

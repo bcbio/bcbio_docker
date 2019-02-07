@@ -26,7 +26,7 @@ bio_nextgen:
 - seqtk
 - star
 - subread
-- tophat
+- tophat;env=python2
 - xorg-libxt
 channels:
 - conda-forge
