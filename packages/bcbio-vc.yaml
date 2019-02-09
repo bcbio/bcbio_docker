@@ -20,6 +20,7 @@ bio_nextgen:
 - gatk4
 - goleft
 - grabix
+- gsort
 - gvcf-regions
 - gvcfgenotyper
 - hts-nim-tools
