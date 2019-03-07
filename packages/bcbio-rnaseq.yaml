@@ -16,9 +16,9 @@ bio_nextgen:
 - pythonpy
 - qsignature
 - qualimap
-- r-base=3.4.1=h4fe35fd_8
+- r-base
 - r-wasabi
-- r=3.4.1
+- r=3.5.1
 - sailfish
 - salmon
 - sambamba
