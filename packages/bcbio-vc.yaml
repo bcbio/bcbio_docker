@@ -3,7 +3,7 @@ bio_nextgen:
 - bcbio-prioritize
 - bcbio-variation-recall
 - bcftools
-- bedtools
+- bedtools=2.27.1
 - biobambam
 - break-point-inspector
 - bwa
@@ -30,6 +30,7 @@ bio_nextgen:
 - minimap2
 - moreutils
 - mosdepth
+- matplotlib<3.0.0,>=2.1.1
 - multiqc
 - multiqc-bcbio
 - novoalign

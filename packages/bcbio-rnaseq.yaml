@@ -1,6 +1,6 @@
 bio_nextgen:
 - atropos;env=python3
-- bedtools
+- bedtools=2.27.1
 - fastqc=0.11.7=5
 - gffread
 - goleft
@@ -8,6 +8,7 @@ bio_nextgen:
 - hts-nim-tools
 - kallisto>=0.43.1
 - mosdepth
+- matplotlib<3.0.0,>=2.1.1
 - multiqc
 - multiqc-bcbio
 - picard
