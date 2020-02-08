@@ -1,5 +1,5 @@
 language: generic
-sudo: required
+os: linux
 dist: trusty
 cache: false
 services:
