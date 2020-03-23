@@ -1,88 +1,88 @@
 bio_nextgen:
-- atropos;env=python3
-- bcbio-prioritize
-- bcbio-variation-recall
-- bcftools
-- bedtools=2.27.1
-- biobambam
-- break-point-inspector
-- bwa
-- bwakit
-- cnvkit
-- coincbc
-- deepvariant;env=dv
-- delly
-- duphold
-- extract-sv-reads
-- fastp
-- fastqc=0.11.7=5
-- fgbio
-- freebayes=1.1.0.46
-- gatk4
-- goleft
-- grabix
-- gsort
-- gvcf-regions
-- gvcfgenotyper
-- hts-nim-tools
-- htslib
-- lumpy-sv;env=python2
-- manta;env=python2
-- minimap2
-- moreutils
-- mosdepth
-- matplotlib<3.0.0,>=2.1.1
-- multiqc
-- multiqc-bcbio
-- novoalign
-- octopus
-- optitype;env=python2
-- peddy;env=python2
-- perl
-- picard
-- platypus-variant;env=python2
-- preseq
-- pysam>=0.13.0
-- pythonpy
-- qsignature
-- qualimap
-- r-base
-- r=3.5.1
-- razers3=3.5.0
-- rtg-tools
-- sambamba
-- samblaster
-- samtools
-- sentieon;env=python2
-- seq2c
-- seqtk
-- simple_sv_annotation;env=python2
-- smoove;env=python2
-- snap-aligner=1.0dev.97
-- snpeff=4.3.1t
-- strelka;env=python2
-- survivor
-- svtools;env=python2
-- svtyper;env=python2
-- umis;env=python2
-- vardict
-- vardict-java
-- variantbam
-- varscan
-- vawk;env=python2
-- vcfanno
-- vcflib
-- verifybamid2
-- vqsr_cnn
-- vt
-- xorg-libxt
+  - atropos
+  - bcbio-prioritize
+  - bcbio-variation-recall
+  - bcftools
+  - bedtools=2.27.1
+  - biobambam
+  - break-point-inspector
+  - bwa
+  - bwakit
+  - cnvkit
+  - coincbc
+  - deepvariant;env=dv
+  - delly
+  - duphold
+  - extract-sv-reads
+  - fastp
+  - fastqc=0.11.7=5
+  - fgbio
+  - freebayes=1.1.0.46
+  - gatk4
+  - goleft
+  - grabix
+  - gsort
+  - gvcf-regions
+  - gvcfgenotyper
+  - hts-nim-tools
+  - htslib
+  - lumpy-sv;env=python2
+  - manta;env=python2
+  - minimap2
+  - moreutils
+  - mosdepth
+  - matplotlib<3.0.0,>=2.1.1
+  - multiqc
+  - multiqc-bcbio
+  - novoalign
+  - octopus
+  - optitype;env=python2
+  - peddy;env=python2
+  - perl
+  - picard
+  - platypus-variant;env=python2
+  - preseq
+  - pysam>=0.13.0
+  - pythonpy
+  - qsignature
+  - qualimap
+  - r-base
+  - r=3.5.1
+  - razers3=3.5.0
+  - rtg-tools
+  - sambamba
+  - samblaster
+  - samtools
+  - sentieon;env=python2
+  - seq2c
+  - seqtk
+  - simple_sv_annotation;env=python2
+  - smoove;env=python2
+  - snap-aligner=1.0dev.97
+  - snpeff=4.3.1t
+  - strelka;env=python2
+  - survivor
+  - svtools;env=python2
+  - svtyper;env=python2
+  - umis;env=python2
+  - vardict
+  - vardict-java
+  - variantbam
+  - varscan
+  - vawk;env=python2
+  - vcfanno
+  - vcflib
+  - verifybamid2
+  - vqsr_cnn
+  - vt
+  - xorg-libxt
 channels:
-- conda-forge
-- bioconda
+  - conda-forge
+  - bioconda
 minimal:
-- awscli
-- bzip2
-- ncurses
-- nomkl
-- readline
-- ucsc-fatotwobit
+  - awscli
+  - bzip2
+  - ncurses
+  - nomkl
+  - readline
+  - ucsc-fatotwobit

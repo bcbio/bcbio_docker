@@ -1,6 +1,6 @@
 language: generic
 os: linux
-dist: trusty
+dist: bionic
 cache: false
 services:
   - docker
