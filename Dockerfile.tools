@@ -2,7 +2,7 @@
 
 ARG git_revision=latest
 FROM quay.io/bcbio/bcbio-base:"$git_revision"
-MAINTAINER Brad Chapman "https://github.com/chapmanb"
+LABEL maintainer="BcBio Maintainers (https://github.com/bcbio/bcbio-nextgen)"
 ARG tool=none
 
 ADD packages/"$tool".yaml /
