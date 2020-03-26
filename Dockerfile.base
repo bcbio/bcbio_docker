@@ -1,12 +1,12 @@
 # Build bcbio base image with code and framework
 
-FROM ubuntu:16.04
-MAINTAINER Brad Chapman "https://github.com/chapmanb"
+FROM ubuntu:18.04
+LABEL maintainer="bcbio (https://github.com/bcbio/bcbio-nextgen)"
 ARG git_revision=master
 
 # Setup a base system 
 RUN apt-get update && \
-    apt-get install -y curl wget git unzip tar gzip bzip2 xz-utils pigz ttf-dejavu && \
+    apt-get install -y --no-install-recommends curl wget git unzip tar gzip bzip2 xz-utils pigz ttf-dejavu && \
 # Support inclusion in Arvados pipelines
     apt-get install -y --no-install-recommends libcurl4-gnutls-dev mbuffer python2.7-dev python-virtualenv && \
 # Not added by default to save space
