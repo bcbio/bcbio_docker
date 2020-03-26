@@ -4,7 +4,7 @@ set -ex -o pipefail
 TAG="${BCBIO_VERSION}-${BCBIO_REVISION}"
 
 # build bcbio base
-docker pull debian:stretch-slim
+docker pull ubuntu:16.04
 docker build --no-cache --build-arg "git_revision=${BCBIO_REVISION}" -t "${NS}/bcbio-base:${TAG}" -t "${NS}/bcbio-base:latest" - < Dockerfile.base
 
 # log in to quay.io

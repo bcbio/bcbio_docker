@@ -1,41 +1,41 @@
 bio_nextgen:
-  - atropos
-  - bedtools=2.27.1
-  - fastqc=0.11.7=5
-  - gffread
-  - goleft
-  - hisat2
-  - hts-nim-tools
-  - kallisto>=0.43.1
-  - mosdepth
-  - matplotlib<3.0.0,>=2.1.1
-  - multiqc
-  - multiqc-bcbio
-  - picard
-  - pizzly
-  - pysam>=0.13.0
-  - pythonpy
-  - qsignature
-  - qualimap
-  - r-base
-  - r-wasabi
-  - r=3.5.1
-  - sailfish
-  - salmon
-  - sambamba
-  - samtools
-  - seqtk
-  - star
-  - subread
-  - tophat;env=python2
-  - xorg-libxt
+- atropos;env=python3
+- bedtools=2.27.1
+- fastqc=0.11.7=5
+- gffread
+- goleft
+- hisat2
+- hts-nim-tools
+- kallisto>=0.43.1
+- mosdepth
+- matplotlib<3.0.0,>=2.1.1
+- multiqc
+- multiqc-bcbio
+- picard
+- pizzly
+- pysam>=0.13.0
+- pythonpy
+- qsignature
+- qualimap
+- r-base
+- r-wasabi
+- r=3.5.1
+- sailfish
+- salmon
+- sambamba
+- samtools
+- seqtk
+- star
+- subread
+- tophat;env=python2
+- xorg-libxt
 channels:
-  - conda-forge
-  - bioconda
+- conda-forge
+- bioconda
 minimal:
-  - awscli
-  - bzip2
-  - ncurses
-  - nomkl
-  - readline
-  - ucsc-fatotwobit
+- awscli
+- bzip2
+- ncurses
+- nomkl
+- readline
+- ucsc-fatotwobit
