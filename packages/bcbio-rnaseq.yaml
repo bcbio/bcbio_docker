@@ -25,6 +25,7 @@ bio_nextgen:
 - sambamba
 - samtools
 - seqtk
+- staden_io_lib
 - star
 - subread
 - tophat;env=python2

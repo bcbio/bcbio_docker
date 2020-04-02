@@ -60,6 +60,7 @@ bio_nextgen:
 - smoove;env=python2
 - snap-aligner=1.0dev.97
 - snpeff=4.3.1t
+- staden_io_lib
 - strelka;env=python2
 - survivor
 - svtools;env=python2
