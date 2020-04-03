@@ -15,7 +15,7 @@ bio_nextgen:
 - duphold
 - extract-sv-reads
 - fastp
-- fastqc=0.11.7=5
+- fastqc>=0.11.8
 - fgbio
 - freebayes=1.1.0.46
 - gatk4
@@ -59,7 +59,7 @@ bio_nextgen:
 - smoove;env=python2
 - snap-aligner=1.0dev.97
 - snpeff=4.3.1t
-- staden_io_lib
+- staden_io_lib>=1.14.12
 - strelka;env=python2
 - survivor
 - svtools;env=python2

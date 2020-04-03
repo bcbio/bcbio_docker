@@ -1,7 +1,7 @@
 bio_nextgen:
 - atropos;env=python3
 - bedtools=2.27.1
-- fastqc=0.11.7=5
+- fastqc>=0.11.8
 - gffread
 - goleft
 - hisat2
@@ -24,7 +24,7 @@ bio_nextgen:
 - sambamba
 - samtools
 - seqtk
-- staden_io_lib
+- staden_io_lib>=1.14.12
 - star
 - subread
 - tophat;env=python2
