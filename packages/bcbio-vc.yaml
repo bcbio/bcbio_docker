@@ -31,7 +31,6 @@ bio_nextgen:
 - minimap2
 - moreutils
 - mosdepth
-- matplotlib<3.0.0,>=2.1.1
 - multiqc
 - multiqc-bcbio
 - novoalign

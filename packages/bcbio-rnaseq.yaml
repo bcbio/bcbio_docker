@@ -8,7 +8,6 @@ bio_nextgen:
 - hts-nim-tools
 - kallisto>=0.43.1
 - mosdepth
-- matplotlib<3.0.0,>=2.1.1
 - multiqc
 - multiqc-bcbio
 - picard
