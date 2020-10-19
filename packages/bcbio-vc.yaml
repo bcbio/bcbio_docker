@@ -51,7 +51,7 @@ bio_nextgen:
 - rtg-tools
 - sambamba
 - samblaster
-- samtools
+- samtools=1.9
 - sentieon;env=python2
 - seq2c
 - seqtk
