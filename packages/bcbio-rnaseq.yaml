@@ -22,7 +22,7 @@ bio_nextgen:
 - sailfish
 - salmon
 - sambamba
-- samtools
+- samtools=1.9
 - seqtk
 - staden_io_lib>=1.14.12
 - star
