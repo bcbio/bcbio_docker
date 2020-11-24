@@ -1,5 +1,5 @@
 bio_nextgen:
-- atropos;env=python3
+- atropos
 - bcbio-prioritize
 - bcbio-variation-recall
 - bcftools
@@ -10,7 +10,7 @@ bio_nextgen:
 - bwakit
 - cnvkit
 - coincbc
-- deepvariant;env=dv
+#- deepvariant;env=dv
 - delly
 - duphold
 - extract-sv-reads
