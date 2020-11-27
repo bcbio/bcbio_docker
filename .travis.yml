@@ -6,8 +6,11 @@ services:
   - docker
 notifications:
   email: false
+stages:
+  - build
+  - test
 jobs:
-  include:
+  build:
     - stage: base
       name: "bcbio-base"
       script: sudo -E bash build_base.sh
@@ -19,6 +22,11 @@ jobs:
       name: "bcbio-rnaseq"
       script: sudo -E bash build_tool.sh
       env: TOOL="bcbio-rnaseq"
+  test:
+    - docker run quay.io/bcbio/bcbio-base:latest /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py --version
+    - docker run quay.io/bcbio/bcbio-rnaseq:latest /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py --version
+    - docker run quay.io/bcbio/bcbio-vc:latest /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py --version
+
 env:
   global:
     - BCBIO_VERSION="1.2.4"
