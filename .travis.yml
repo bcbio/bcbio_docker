@@ -24,9 +24,9 @@ jobs:
       script: sudo -E bash build_tool.sh
       env: TOOL="bcbio-rnaseq"
     - stage: test
-      script: docker run quay.io/bcbio/bcbio-base:latest /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py --version
-    - script: docker run quay.io/bcbio/bcbio-rnaseq:latest /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py --version
-    - script: docker run quay.io/bcbio/bcbio-vc:latest /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py --version
+      script: docker run quay.io/bcbio/bcbio-base:${BCBIO_VERSION}-${BCBIO_REVISION} /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py --version
+    - script: docker run quay.io/bcbio/bcbio-rnaseq:${BCBIO_VERSION}-${BCBIO_REVISION} /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py --version
+    - script: docker run quay.io/bcbio/bcbio-vc:${BCBIO_VERSION}-${BCBIO_REVISION} /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py --version
 
 env:
   global:
