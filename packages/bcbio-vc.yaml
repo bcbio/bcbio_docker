@@ -36,7 +36,7 @@ bio_nextgen:
 - novoalign
 - octopus
 - optitype;env=python2
-- peddy;env=python2
+- peddy
 - perl
 - picard
 - platypus-variant;env=python2
