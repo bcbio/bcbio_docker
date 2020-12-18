@@ -1,0 +1,24 @@
+name: bcbio-pr
+on:
+  pull_request:
+    paths:
+      - builds/base/**
+jobs:
+  build-base:
+    env:
+      BCBIO_VERSION: 1.2.4
+      BCBIO_REVISION: 517bb34
+      image_name: bcbio-base
+      context: builds/base
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        uses: docker/build-push-action@v1
+        with:
+          path: ${{ env.context }}
+          push: false
+          tags: bcbio-base:1.2.4-517b34,bcbio-base:latest
+      - name: test
+        run: |
+          echo "Testing bcbio-base image."
+          docker run bcbio-base:1.2.4-517bb34 /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py --version

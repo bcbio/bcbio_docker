@@ -1,0 +1,25 @@
+name: bcbio-docker-publish
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+jobs:
+  build-base:
+    env:
+      BCBIO_VERSION: 1.2.4
+      BCBIO_REVISION: 517b34
+      image_name: bcbio-base
+      context: builds/base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and publish image to Quay
+        uses: docker/build-push-action@v1
+        with:
+          path: ${{ env.context }}
+          registry: quay.io
+          repository: bcbio/bcbio-base
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+          tags: bcbio-base:1.2.4-517b34,bcbio-base:latest
