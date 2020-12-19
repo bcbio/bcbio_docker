@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build and publish image to Quay
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v2
         with:
           path: ${{ env.context }}
           registry: quay.io
@@ -23,4 +23,6 @@ jobs:
           repository: bcbio/bcbio-base
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
-          tags: bcbio-base:1.2.4-517b34,bcbio-base:latest
+          tags: |
+            bcbio-base:1.2.4-517b34
+            bcbio-base:latest
