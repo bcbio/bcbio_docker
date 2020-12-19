@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build and publish image to Quay
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v1
         with:
           path: ${{ env.context }}
           registry: quay.io
