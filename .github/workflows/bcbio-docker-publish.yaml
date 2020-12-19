@@ -17,12 +17,9 @@ jobs:
       - name: Build and publish image to Quay
         uses: docker/build-push-action@v1
         with:
-          path: ${{ env.context }}
-          registry: quay.io
+          context: .
+          file: builds/base/Dockerfile
           push: false
-          repository: bcbio/bcbio-base
-          username: ${{ secrets.REGISTRY_USERNAME }}
-          password: ${{ secrets.REGISTRY_PASSWORD }}
           tags: |
             bcbio-base:1.2.4-517b34
             bcbio-base:latest
