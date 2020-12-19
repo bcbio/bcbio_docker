@@ -33,5 +33,5 @@ jobs:
           file: builds/base/Dockerfile
           push: true
           tags: |
-            bcbio-base:1.2.4-517b34
-            bcbio-base:latest
+            quay.io/bcbio-base:1.2.4-517b34
+            quay.io/bcbio-base:latest
