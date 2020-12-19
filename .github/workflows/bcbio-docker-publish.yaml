@@ -2,7 +2,7 @@ name: bcbio-docker-publish
 on:
   push:
     branches:
-      - master
+      - gha
     tags:
       - '*'
 jobs:
@@ -19,6 +19,7 @@ jobs:
         with:
           path: ${{ env.context }}
           registry: quay.io
+          push: false
           repository: bcbio/bcbio-base
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
