@@ -1,6 +1,6 @@
 # bcbio automated Docker builds
 
-[![Build Status](https://github.com/bcbio/bcbio_docker/workflows/bcbio-docker-publish/badge.svg)
+![Build Status](https://github.com/bcbio/bcbio_docker/workflows/bcbio-docker-publish/badge.svg)
 
 Uses [GitHub actions](https://github.com/features/actions) and
 [Quay](https://quay.io/organization/bcbio) to build Docker images for
