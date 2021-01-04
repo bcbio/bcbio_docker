@@ -2,7 +2,7 @@ name: bcbio-docker-publish
 on:
   push:
     branches:
-      - gha
+      - master
     tags:
       - '*'
 jobs:
