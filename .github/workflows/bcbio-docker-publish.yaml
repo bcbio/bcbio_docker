@@ -31,8 +31,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ${{ jobs.env.DOCKERFILE }}
+          file: ${{ jobs.bcbio-base.env.DOCKERFILE }}
           push: true
           tags: |
-            quay.io/bcbio/${{ jobs.env.IMAGE_NAME }}:${{ env.BCBIO_VERSION }}-${{ env.BCBIO_REVISION }}
-            quay.io/bcbio/${{ jobs.env.IMAGE_NAME }}:latest
+            quay.io/bcbio/${{ jobs.bcbio-base.env.IMAGE_NAME }}:${{ env.BCBIO_VERSION }}-${{ env.BCBIO_REVISION }}
+            quay.io/bcbio/${{ jobs.bcbio-base.env.IMAGE_NAME }}:latest
