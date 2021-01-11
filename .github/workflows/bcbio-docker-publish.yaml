@@ -11,8 +11,8 @@ env:
 jobs:
   build-base:
     env:
-      image_name: bcbio-base
-      context: builds/base
+      IMAGE_NAME: bcbio-base
+      DOCKERFILE: builds/base/Dockerfile
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,8 +31,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: builds/base/Dockerfile
+          file: ${{ jobs.env.DOCKERFILE }}
           push: true
           tags: |
-            quay.io/bcbio/bcbio-base:${{ env.BCBIO_VERSION }}-${{ env.BCBIO_REVISION }}
-            quay.io/bcbio/bcbio-base:latest
+            quay.io/bcbio/${{ jobs.env.IMAGE_NAME }}:${{ env.BCBIO_VERSION }}-${{ env.BCBIO_REVISION }}
+            quay.io/bcbio/${{ jobs.env.IMAGE_NAME}}:latest
