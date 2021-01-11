@@ -35,4 +35,4 @@ jobs:
           push: true
           tags: |
             quay.io/bcbio/${{ jobs.env.IMAGE_NAME }}:${{ env.BCBIO_VERSION }}-${{ env.BCBIO_REVISION }}
-            quay.io/bcbio/${{ jobs.env.IMAGE_NAME}}:latest
+            quay.io/bcbio/${{ jobs.env.IMAGE_NAME }}:latest
