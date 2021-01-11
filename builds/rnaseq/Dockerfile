@@ -1,0 +1,25 @@
+# Build bcbio CWL ready docker images with tools from base image
+
+ARG git_revision=latest
+FROM quay.io/bcbio/bcbio-base:"$git_revision"
+MAINTAINER Brad Chapman "https://github.com/chapmanb"
+ARG tool=none
+
+ADD bcbio-rnaseq.yaml /
+# install tools with custom YAML file
+# and clean filesystem
+RUN mkdir -p /tmp/bcbio-nextgen-install && cd /tmp/bcbio-nextgen-install && \
+    /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py upgrade --isolate \
+    --tooldir=/usr/local --tools --toolconf /"$tool".yaml && \
+    cd /usr/local && \ 
+    /usr/local/share/bcbio-nextgen/anaconda/bin/conda clean -afy && \
+    /usr/local/share/bcbio-nextgen/anaconda/bin/conda build purge-all && \
+    rm -rf /usr/local/share/bcbio-nextgen/anaconda/pkgs/scipy-0.19.1-np113py27_nomkl_0 && \
+    rm -rf /usr/local/share/bcbio-nextgen/anaconda/zulu*.tar.gz && \
+    rm -rf /tmp/bcbio-nextgen-install && \
+    rm -rf bcbio-vc.yaml && \
+    rm -rf bcbio_nextgen_install.py && \
+    rm -rf bcbiotx && \
+    find /usr/local/share/bcbio-nextgen -follow -type f -name "*.pyc" -delete && \
+    find /usr/local/share/bcbio-nextgen -follow -type f -name "*.a" -delete && \
+    find /usr/local/share/bcbio-nextgen -follow -type f -name "*.js.map" -delete 
