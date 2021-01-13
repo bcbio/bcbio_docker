@@ -4,12 +4,12 @@ ARG git_revision=latest
 FROM quay.io/bcbio/bcbio-base:"$git_revision"
 MAINTAINER Brad Chapman "https://github.com/chapmanb"
 
-ADD bcbio_rnaseq.yaml \
+COPY bcbio_rnaseq.yaml /tmp/
 # install tools with custom YAML file
 # and clean filesystem
 RUN mkdir -p /tmp/bcbio-nextgen-install && cd /tmp/bcbio-nextgen-install && \
     /usr/local/share/bcbio-nextgen/anaconda/bin/bcbio_nextgen.py upgrade --isolate \
-    --tooldir=/usr/local --tools --toolconf bcbio_rnaseq.yaml && \
+    --tooldir=/usr/local --tools --toolconf /tmp/bcbio_rnaseq.yaml && \
     cd /usr/local && \ 
     /usr/local/share/bcbio-nextgen/anaconda/bin/conda clean -afy && \
     /usr/local/share/bcbio-nextgen/anaconda/bin/conda build purge-all && \
