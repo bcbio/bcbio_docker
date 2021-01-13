@@ -33,11 +33,11 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ${{ jobs.bcbio-base.env.DOCKERFILE }}
+          file: ${{ jobs.build-base.env.DOCKERFILE }}
           push: true
           tags: |
-            quay.io/bcbio/${{ jobs.bcbio-base.env.IMAGE_NAME }}:${{ env.BCBIO_VERSION }}-${{ env.BCBIO_REVISION }}
-            quay.io/bcbio/${{ jobs.bcbio-base.env.IMAGE_NAME }}:latest
+            quay.io/bcbio/${{ jobs.build-base.env.IMAGE_NAME }}:${{ env.BCBIO_VERSION }}-${{ env.BCBIO_REVISION }}
+            quay.io/bcbio/${{ jobs.build-base.env.IMAGE_NAME }}:latest
   build-rnaseq:
     env:
       IMAGE_NAME: bcbio-rnaseq
@@ -60,8 +60,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ${{ jobs.bcbio-rnaseq.env.DOCKERFILE }}
+          file: ${{ jobs.build-rnaseq.env.DOCKERFILE }}
           push: true
           tags: |
-            quay.io/bcbio/${{ jobs.bcbio-rnaseq.env.IMAGE_NAME }}:${{ env.BCBIO_VERSION }}-${{ env.BCBIO_REVISION }}
-            quay.io/bcbio/${{ jobs.bcbio-rnaseq.env.IMAGE_NAME }}:latest
+            quay.io/bcbio/${{ jobs.build-rnaseq.env.IMAGE_NAME }}:${{ env.BCBIO_VERSION }}-${{ env.BCBIO_REVISION }}
+            quay.io/bcbio/${{ jobs.build-rnaseq.env.IMAGE_NAME }}:latest
