@@ -4,7 +4,7 @@ ARG git_revision=latest
 FROM quay.io/bcbio/bcbio-base:"$git_revision"
 MAINTAINER Brad Chapman "https://github.com/chapmanb"
 
-COPY bcbio_rnaseq.yaml /tmp/
+ADD bcbio-rnaseq.yaml /tmp
 # install tools with custom YAML file
 # and clean filesystem
 RUN mkdir -p /tmp/bcbio-nextgen-install && cd /tmp/bcbio-nextgen-install && \
