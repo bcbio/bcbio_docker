@@ -1,5 +1,5 @@
 bio_nextgen:
-- atropos
+- atropos;env=python3
 - bcbio-prioritize
 - bcbio-variation-recall
 - bcftools
@@ -7,7 +7,7 @@ bio_nextgen:
 - biobambam
 - break-point-inspector
 - bwa
-- bwakit
+- bwakit;env=bwakit
 - cnvkit
 - coincbc
 #- deepvariant;env=dv
@@ -15,14 +15,14 @@ bio_nextgen:
 - duphold
 - extract-sv-reads
 - fastp
-- fastqc>=0.11.8
+- fastqc>=0.11.8=1
 - fgbio
 - freebayes
 - gatk4
 - goleft
 - grabix
 - gsort
-- gvcf-regions
+- gvcf-regions;env=python2
 - gvcfgenotyper
 - hts-nim-tools
 - htslib
@@ -30,12 +30,12 @@ bio_nextgen:
 - manta;env=python2
 - minimap2
 - moreutils
-- mosdepth
+- mosdepth;env=htslib1.10
 - multiqc
 - multiqc-bcbio
 - novoalign
-- octopus
-- optitype;env=python2
+- octopus>=0.5.1b
+- optitype>=1.3.4
 - peddy
 - perl
 - picard
@@ -53,7 +53,7 @@ bio_nextgen:
 - samblaster
 - samtools=1.9
 - sentieon;env=python2
-- seq2c
+- seq2c<2016
 - seqtk
 - simple_sv_annotation;env=python2
 - smoove;env=python2
@@ -65,8 +65,8 @@ bio_nextgen:
 - svtools;env=python2
 - svtyper;env=python2
 - umis;env=python2
-- vardict
-- vardict-java
+- vardict>=1.8.2,<2015
+- vardict-java>=1.8.2
 - variantbam
 - varscan
 - vawk;env=python2
