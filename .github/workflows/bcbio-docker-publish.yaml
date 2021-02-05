@@ -6,8 +6,9 @@ on:
     tags:
       - '*'
 env:
-  BCBIO_VERSION: 1.2.5
-  BCBIO_REVISION: 69eea83
+  BCBIO_VERSION: 1.2.6
+  BCBIO_REVISION: 0f27d2b
+
 jobs:
   build-base:
     env:
